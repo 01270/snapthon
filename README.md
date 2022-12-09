@@ -5,7 +5,7 @@ This package can make simple snapchat task
 - Stories Downloader
 - Get User Info
 
-![alt text](https://ibb.co/pQ5SC11)
+![alt text](https://i.ibb.co/tzF9yHH/image.png)
 
 ## Help
 
@@ -16,6 +16,8 @@ pip install snapthon
 
 Download Stories Example
 ```
+from snapthon import Snapchat
+
 snap = Snapchat("aboflah_1")
 print(len(snap.stories())
 snap.stories_downloader() # Saving videos and photos
@@ -25,6 +27,8 @@ snap.stories_downloader() # Saving videos and photos
 
 Get User Info Example
 ```
+from snapthon import Snapchat
+
 snap = Snapchat("aboflah_1")
 print(f'''
     Data the snapchat account:
@@ -44,6 +48,8 @@ print(f'''
 
 Others
 ```
+from snapthon import Snapchat
+
 snap = Snapchat("aboflah_1")
 print(snap.user_info['username']) # Get all user info as a dict
 print(snap.stories()) # Get the stories full data dict ( photo - video - timestap )
